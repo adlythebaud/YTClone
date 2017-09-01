@@ -56,17 +56,26 @@ class App extends Component {
 
 		YTSearch({key: API_KEY, term: 'surfboards'}, (videos) => {
 			console.log(videos);
-			// set the state here?
+			// set the state here
 			this.setState({ videos: videos });
 		});
+
+		const user = {
+	  	firstName: 'Adly',
+	  	lastName: 'Thebaud'
+		};
+
+		var myName = "Adly";
 	}
+
+
 
 
 
 	render() {
 		return (
 			<div>
-				<SearchBar />
+				<SearchBar/>
 				<VideoList videos={this.state.videos} />
 			</div>
 		);
