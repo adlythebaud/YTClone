@@ -1,5 +1,3 @@
-// we import react because whenever we export a call to a function, it turns into
-// React.createElement(<input />)
 import React, { Component } from 'react';
 
 
